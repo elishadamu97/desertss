@@ -1,19 +1,27 @@
 ######################### Hero Area ##############################
 hero_area:
   background_image : "/assets/images/bg/banner-2.png"
-  subtitle: "MY NAME IS Jessica Alba"
-  title : "I am a creative <br>UI/UX Designer <br>from London."
-  content : "Dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
-  image : "/assets/images/banner/banner-img-2.png"
+
+  title : "Product reviews you can trust"
+  content : "Our goal is simple: To create the best product reviews in the world. Our independent comparison reviews are based on thorough hands-on testing. To stay objective and independent, we purchase all of the items we evaluate at retail, just like you."
+  image : "/assets/images/banner/hero.svg"
   button:
     enable : true
-    label : "contact me"
+    label : "About Us"
+    link : "/about"
+  button1:
+    enable : true
+    label : "Contact Me"
     link : "/contact"
 
 ########################### Service ##############################
 services:
 - title : "Brand Design"
   icon : "ti-ruler-pencil"
+  content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
+
+- title : "Seo & Marketing"
+  icon : "ti-announcement"
   content : "Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna."
 
 - title : "Seo & Marketing"
@@ -32,22 +40,23 @@ testimonial:
   subtitle : "testimonials"
   bg_image : "/assets/images/bg/testimonial-bg.png"
   item:
-  - name : "Liam Hughes"
-    designation : "Manager"
-    image : "/assets/images/team/test-1.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+  - name : "– Marta Falcone"
+    designation : "Client"
+    image : "/assets/images/team/testimonial-1-1.jpg"
+    content : "The best in trusted reviews. Always check their website first before buying a big product."
     
-  - name : "Jane Austin"
-    designation : "Designer"
-    image : "/assets/images/team/test-2.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+  - name : "– Robert T. Simpson"
+    designation : "Client"
+    image : "/assets/images/team/testimonial-2-1.jpg"
+    content : "
+It’s a site where you can get accurate informations of gadgets and have the latest news. Has useful detailed reviews, can provide some special offers, also suitable for just surfing around."
     
-  - name : "Liolane hussy"
-    designation : "Developer"
-    image : "/assets/images/team/test-3.jpg"
-    content : "Lorem ipsum dolor amet constur adipisicing elit sed eiusmtempor incid dolore magna aliqu. enim minim veniam.quis nos trud exercittion ullam laboris nisi ut aliquip excepteur. sint occaecat cuida tat nonproident sunt in culpa qui officia deserunt mollit anim est laborum. sed ut perspiciatis."
+  - name : "– John K. Jurgensen"
+    designation : "Client"
+    image : "/assets/images/team/testimonial-4-1.jpg"
+    content : "blackdesert.es is a great resource for reading reviews on technology products before making a purchase. The site has helped me make many informed decisions on what to buy."
 
-
+  
 ######################## Fun facts ########################
 funfacts:
   enable : true

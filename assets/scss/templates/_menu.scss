@@ -19,16 +19,20 @@
 }
 
 .navbar-brand {
-  font-size: 40px;
-  color: $white;
+  color: aliceblue;
   font-weight: 500;
   font-family: $heading-font;
+  padding-top: 40px;
 }
 
 .nav-top {
   background: $secondary-color;
   transition: .0s all ease;
   z-index: 99999;
+ padding-bottom: 20px;
+  .logo-section{
+    color: aliceblue;
+  }
 }
 
 //  Dropdown Menu
