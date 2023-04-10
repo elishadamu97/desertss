@@ -1,16 +1,39 @@
+
 <!-- Service Start -->
-<section class="service-2">
+<section class="section service bg-secondary position-relative">
+	<img src="{{'/assets/images/bg/feature-bg.png' | relative_url}}" alt="" class="overlay-shape">
 	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<span class="h5 text-color text-uppercase">
+					services
+				</span>
+				<h3 class="mb-5 mt-2 text-white">We Create Products that Make
+					People Happy.</h3>
+			</div>
+		</div>
+
 		<div class="row justify-content-center">
-			{% for service in site.data.homepage_1.services %}
-			<div class="col-lg-4 col-md-6 {% unless forloop.last %}border-right{% endunless %}">
-				<div class="service-item mb-4 mb-lg-0 text-center px-4">
-					<i class="{{ service.icon }} text-color icon-md"></i>
-					<h4 class="my-4">{{ service.title }}</h4>
-					<p>{{ service.content }}</p>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-ruler-pencil text-color"></i>
+					<h4 class="my-4 text-white">Brand Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
 				</div>
 			</div>
-			{% endfor %}
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-announcement text-color"></i>
+					<h4 class="my-4 text-white">Seo & Marketing</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item mb-4 mb-lg-0 p-0">
+					<i class="ti-palette text-color"></i>
+					<h4 class="my-4 text-white">Creative Design</h4>
+					<p>Lorem ipsum dolor sit amet consectetur elit sed do eiusmod tempor incididunt labore et dolore magna.</p>
+				</div>
 			</div>
 		</div>
 	</div>

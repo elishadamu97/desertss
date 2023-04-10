@@ -1,53 +1,53 @@
 <!-- Footer section start -->
 <footer class="section bg-secondary position-relative pb-0">
+	<style>
+		@media screen and (min-width: 480px) {
+			.contact{
+				margin-left: 450px;
+		}		
+		}
+		.contact-button1{
+							border: 2px solid #ffffff;
+							border-radius: 2px;
+							font-weight: bold;
+							font-size: 14px;
+							background-color: #0b1d3f;
+							margin: 0px 25px 0px 0px;
+							color: #ffffff;
+							width: 155px !important;
+							height: 60px !important;
+							text-align: center;
+							padding: 15px 15px 15px 15px;
+							text-decoration: none !important;
+						}
+						.contact-button1:hover{
+							
+							color: #ffffff !important;
+							
+						}
+	</style>
 	<img src="{{'/assets/images/bg/footer-bg.png' | relative_url}}" alt="" class="overlay-shape">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-3 col-md-8">
 				<div class="footer-widget  mb-5 mb-lg-0">
-					<h4 class="font-weight-bold text-white mb-3">About Us</h4>
-					{{site.footer_content | markdownify}}
-
-					<ul class="list-inline socials-links">
-						{% for social in site.social %}
-						<li class="list-inline-item mb-2">
-							<a target="_blank" href="{{social.link}}" class="active"><i class="{{social.icon}}"></i></a>
-						</li>
-						{% endfor %}
+					<h4 class="font-weight-bold text-white mb-6">For any questions or concerns, please reach out to us.</h4>
+					<span class="footer-content">{{site.footer_content | markdownify}}</span>
+					<br>
+					
+					<a href="./contact" class="contact-button1">Contact Us</a>
 					</ul>
 				</div>
 			</div>
 
-			<div class="col-lg-3 ml-lg-auto mb-5 mb-lg-0 col-md-6">
-				<div class="footer-widget">
-					<h4 class="text-white mb-3">Navigation</h4>
-
-					<ul class="list-unstyled lh-38">
-						{% for menu in site.data.navigation.footer %}
-						<li><a href="{{menu.link | relative_url }}">{{menu.name}}</a></li>
-						{% endfor %}
-					</ul>
-				</div>
-			</div>		
-			<div class="col-lg-2 col-md-6">
-				<div class="footer-widget  mb-5 mb-lg-0">
-					<h4 class="text-white mb-3">Services</h4>
-					<ul class="list-unstyled lh-38">
-						<li><a href="#">Brand Design</a></li>
-						<li><a href="#">seo & marketing</a></li>
-						<li><a href="#">creative design</a></li>
-						<li><a href="#">photography</a></li>
-						<li><a href="#">print design</a></li>
-					</ul>
-				</div>
-			</div>		
-			<div class="col-lg-3 col-md-6">
+			
+			<div  class=" contact col-lg-3 col-md-4">
 				<div class="footer-widget">
 					<h4 class="text-white mb-3">Contact Info</h4>
 					<ul class="list-unstyled lh-38">
+						<li><a href="blackdesert.es">blackdesert.es</a></li>
 						<li>{{site.address}}</li>
 						<li><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
-						<li><a href="mailto:{{site.email}}">{{site.email}}</a></li>
 					</ul>
 				</div>
 			</div>		
@@ -60,16 +60,13 @@
 				<div class="col-12 col-lg-4">
 					<div class="text-center text-lg-left "> <span>{{ site.copyright }}</span></div>
 				</div>
-				<div class="col-lg-4 text-center col-12">
-					<a href="{{site.baseurl}}">
-						<img src="{{site.logo | relative_url}}" alt="{{site.title}}" class="img-fluid">
-					</a>
-				</div>
+				
 				<div class="col-lg-4 col-12">
 					<div class="text-center text-lg-right">
-						{% for menu in site.data.navigation.bottom %}
-						<a href="{{menu.link | relative_url }}">{{menu.name}} {% unless forloop.last %} <span class="mx-2">|</span> {% endunless %}</a>
-						{% endfor %}
+					
+						<a href="#">Privacy Policy</a> <span>|</span>
+						<a href="#">Affiliate Disclosure</a>
+			
 					</div>
 				</div>
 			</div>
