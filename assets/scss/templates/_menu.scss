@@ -25,7 +25,15 @@
   padding-top: 20px;
 }
 
-
+.nav-top {
+  background: $secondary-color;
+  transition: .0s all ease;
+  z-index: 99999;
+ padding-bottom: 20px;
+  .logo-section{
+    color: aliceblue;
+  }
+}
 
 //  Dropdown Menu
 .dropdown {
